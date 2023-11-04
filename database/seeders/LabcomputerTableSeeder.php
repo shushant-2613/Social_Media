@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Labcomputer;
+
 
 class LabcomputerTableSeeder extends Seeder
 {
@@ -12,14 +14,18 @@ class LabcomputerTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $a = new Labcomputer;
-        $a->PC_NO = 76;
-        $a->Operating_System = "Windows";
-        $a->student_id = 1;
 
-        $a = new Labcomputer;
-        $a->PC_NO = 49;
-        $a->Operating_System = "Linux";
-        $a->student_id = 2;
+        Labcomputer::factory()->count(20)->create();
+        
+        
+        // $a = new Labcomputer;
+        // $a->PC_NO = 76;
+        // $a->Operating_System = "Windows";
+        // $a->student_id = 1;
+
+        // $b = new Labcomputer;
+        // $b->PC_NO = 49;
+        // $b->Operating_System = "Linux";
+        // $b->student_id = 2;
     }
 }
