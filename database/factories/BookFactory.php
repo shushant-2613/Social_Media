@@ -18,7 +18,8 @@ class BookFactory extends Factory
     { 
         $id = Student::inRandomOrder()->first()->id;
         return [
-            'BookName' => fake()->randomElement($array = array('Computer Networking', 'DevOps', 'Java')),    
+            'BookName' => fake()->randomElement($array = array('Computer Networking', 'DevOps', 'Java', 'Spark Ada',
+                                                 'Ethical Hacking', 'Penetration Testing', 'Web Application Development')),    
             'student_id' => $id,
         ];
     }
