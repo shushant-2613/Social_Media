@@ -4,16 +4,15 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Student;
+use App\Models\Computerlab;
 
-class StudentTableSeeder extends Seeder
+class ComputerlabSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Student::factory()->count(20)->create();
-
+        Computerlab::factory()->count(20)->create();
     }
 }

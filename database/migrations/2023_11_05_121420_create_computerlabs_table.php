@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('labcomputers', function (Blueprint $table) {
+        Schema::create('computerlabs', function (Blueprint $table) {
             $table->id();
             $table->integer('PC_NO');
             $table->string('Operating_System');
@@ -20,7 +20,6 @@ return new class extends Migration
 
             $table->foreign('student_id')->references('id')->on('students')
                     ->onDelete('cascade')->onUpdate('cascade');
-            
         });
     }
 
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('labcomputers');
+        Schema::dropIfExists('computerlabs');
     }
 };

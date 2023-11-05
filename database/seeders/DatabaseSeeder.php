@@ -6,7 +6,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Student;
 use App\Models\Book;
-use App\Models\Labcomputer;
+use App\Models\Computerlab;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call(StudentTableSeeder::class);
         $this->call(BookTableSeeder::class);
-        $this->call(LabcomputerTableSeeder::class);
+        $this->call(ComputerlabSeeder::class);
 
         
         $student = Student::factory()
