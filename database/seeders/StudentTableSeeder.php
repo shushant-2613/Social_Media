@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -13,7 +12,7 @@ class StudentTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Student::factory()->count(20)->create();
+        Student::factory()->count(30)->create();
 
     }
 }

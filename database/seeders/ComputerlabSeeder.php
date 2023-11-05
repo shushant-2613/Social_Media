@@ -13,6 +13,6 @@ class ComputerlabSeeder extends Seeder
      */
     public function run(): void
     {
-        Computerlab::factory()->count(20)->create();
+        Computerlab::factory()->count(30)->create();
     }
 }
